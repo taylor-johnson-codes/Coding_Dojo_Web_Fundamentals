@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Platform Lesson</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>console.log($())</script>
+    <!-- logs/shows all jQuery functionality that is loaded -->
+
+    <script>
+        $(document).ready(function(){  // when the document is ready (after it's all loaded top to bottom) do this function
+            console.log('document is ready') // can do this to know if doc ran
+            $('h1').html('hello')
+            $('h1').click(function(){
+                console.log('h1 is clicked') // can do this to know if a click actually occurred
+                $('p').toggle()
+            })
+        })
+    </script>
+
+    <script>
+        $(document).ready(function(){
+
+            // alert('You are now working with jQuery!')
+            
+            $('a').click(function(){
+                alert('You are leaving this page')
+            })
+
+            // effects methods
+            $('#hide').click(function(){
+                $('p').hide()
+            })
+
+            $('#show').click(function(){
+                $('p').show()
+            })
+
+            // manipulation methods add/change either text or html to your document (.text() and .html() overwrite what's there)
+            $('h3').hover(function(){
+                $('h2').text("Go see the Space Needle!")
+            })
+
+            // $('h3').hover(function(){
+            //     $('h2').text("Go see the Space Needle!")
+            // }, function(){alert('now invoking the 2nd function')})
+            // // .hover() is unique in that it allows two input functions
+
+            $('.append').click(function(){
+                $('.result').append('<h4>.append adds HTML!</h4>')
+            })
+
+            // css method
+            // this example turns all buttons yellow after any button is clicked
+            $('button').click(function(){
+                $("button").css('background-color', 'yellow')
+            })
+
+            // getter (gets the value of something); leave .text() parameter empty
+            $("#button1").click(function(){
+                var myText = $("#myPara").text()  // grabs value of the text, so myText = This is my paragraph
+                alert(myText)
+            })
+
+            // setter (sets the value of something); insert parameter into .text()
+            $("#button2").click(function(){
+                $("#myPara2").text('see how .text() works as a setter')
+            })
+
+            // // $(this) example:
+            // $('img').click(function(){  // listening for a click on any image
+            //     $(this).hide()  // targets the specific image the user clicks on; aka Selects the particular element that triggered the event handler,
+            // })
+        })
+    </script>
+</head>
+<body>
+    
+    <h1>Coding Dojo</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+
+    <p>this is a paragraph</p>
+    <button id="hide">This will hide all paragraphs</button>
+    <button id="show">This will show all paragraphs</button>
+    <a href="www,google.com" id="mylink">Go to Google</a>
+    <h3>Olympia, WA</h3>
+    <h2>Portland, OR</h2>
+    <button class="append">Click to see .append work</button>
+    <div class="result"></div>
+
+
+    <p id="myPara">This is my paragraph</p>
+    <p id="myPara2">This is my SECOND paragraph</p>
+    <button id="button1">Click me to see alert</button>
+    <button id="button2">Click to see 2nd paragraph change</button>
+
+    
+    <!-- 
+    if using this method instead of what's in the head tag, put at bottom right before body end tag for things to run faster
+    <script>
+        $('h1').html('hello')  // grabbing the h1 and changing it with jQuery
+    </script> 
+    -->
+
+</body>
+</html>

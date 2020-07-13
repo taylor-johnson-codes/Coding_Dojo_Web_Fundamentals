@@ -1,0 +1,109 @@
+/*
+1 SELECTOR
+2 ATTRIBUTE
+3 PROPERTY
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: cursive;
+}
+
+/*
+Star is SELECTOR (star selects all HTML code)
+margin/padding is ATTRIBUTE
+0 is PROPERTY
+*/
+
+/*   To target h1:   */
+
+#header_title{
+    color: deeppink;
+}
+
+/*   To target all body headers:   */
+
+.body_title{
+    color: blue;
+}
+
+#container2{
+    width: 20px;
+    height: 20px;
+    background-color: aqua;
+    margin: 10px;
+    padding: 10px;
+    margin-left: 50px;
+    padding-top: 100px;
+    display: inline-block;
+}
+
+/* p{
+    display: inline-block;
+    vertical-align: top;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+} */
+
+/*   DISPLAY: div and p tags = block elements by default   */
+/*   div takes up whole width of page   */
+
+/*---------------------------------------------------------*/
+
+/*   Can do p{} or #important{} or .info{}*/
+
+p{color: blue}
+
+#important{font-size: 36px}
+
+.info{
+    background-color: blueviolet;
+    border: 5px solid red
+}
+
+
+/*---------------------------------------------------------*/
+
+
+.p{
+    background-color: aqua;
+    display: inline;  /**removes object from taking up whole screen*/
+}
+
+a{
+    background-color: blueviolet;
+    display: block; /**allows object to take up whole screen*/
+}
+
+ul{
+    background-color: yellow;
+}
+
+ul li{ 
+    background-color: green;
+}
+/* not sure why these don't work */
+
+
+/*---------------------------------------------------------*/
+
+
+#container{
+    width: 960px;
+    background-color: gray;
+    overflow: hidden;
+    height: auto;
+}
+
+#box1, #box2, #box3{
+    background-color: green;
+    height: 200px;
+    width: 200px;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+
+#box1{
+    float: right;
+}

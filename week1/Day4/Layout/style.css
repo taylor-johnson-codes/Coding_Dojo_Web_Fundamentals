@@ -1,0 +1,208 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    width: 970px;
+    height: 900px;
+    background-color: #245076;
+}
+
+#top_blue_box{
+    color: white;
+}
+
+#header{
+    padding: 20px;
+    height: 100px;
+}
+
+#header img{
+    display: inline-block;
+    width: 33%;
+}
+
+#search_corner{
+    float: right;
+}
+
+#search_corner h4{
+    margin: 0px 30px 0px 0px;
+    float: right;
+}
+
+#search_corner a{
+    color: yellow
+}
+
+#search_box{
+    background-color: #444444;
+    border-radius: 10px;
+    width: 300px;
+    height: 40px;
+    vertical-align: bottom;
+    margin-top: 30px;
+    padding: 15px 15px 20px 20px;
+    box-shadow: 3px 3px black;
+}
+
+#search_box input{
+    display: inline-block;
+    height: 30px;
+    margin: 5px 5px 15px 50px;
+    border: lightgray solid 3px;
+    text-align: center;
+    box-shadow: 3px 3px black;
+}
+
+#search_box button{
+    display: inline-block;
+    border: lightgray solid 1px;
+    background-color: #245076;
+    color: white;
+    padding: 7px;
+    box-shadow: 3px 3px black;
+}
+
+#nav_bar{
+    height: 50px;
+    margin: 0px 50px 0px 50px;
+    padding-top: 1px;
+    padding-bottom: 6px;
+    background-color: #487FAD;
+    box-shadow: 3px 3px black;
+    border-radius: 3px;
+}
+
+#nav_bar ul{
+    text-align: center;
+}
+
+#nav_bar li{
+    display: inline;
+    margin-right: 30px;
+}
+
+#nav_bar a{
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 23px;
+}
+
+#blue_body{
+    height: 325px;
+    margin-top: 20px;
+    padding: 0px 25px 0px 25px;
+}
+
+#left_list{
+    display: inline-block;
+    width: 250px;
+}
+
+#left_list li{
+    list-style: none;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#left_list li::before{
+    content: "\00BB \0020"
+}
+
+#left_list a{
+    color: white;
+}
+
+#right_body{
+    display: inline-block;
+    width: 600px;
+    margin-left: 25px;
+    vertical-align: top;
+    text-align: center;
+}
+
+#right_body p{
+    font-size: 13px;
+}
+
+.yellow_text{
+    font-weight: normal;
+    font-style: italic;
+    color: #FFD42E;
+}
+
+#Zen{
+    font-weight: normal;
+    font-size: 15px;
+}
+
+#middle_white_box{
+    background-color: white;
+    color: black;
+    height: 250px;
+    padding: 0px 80px 0px 80px;
+}
+
+.card{
+    display: inline-block;
+    width: 375px;
+    text-align: center;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+.card .empty_line{
+    background-color: #73A7D5;
+    color: #73A7D5;
+    font-size: 5px;
+    margin-top: 10px;
+}
+
+.card h2{
+    margin: 10px 100px 0px auto;
+}
+
+.card .lorem{
+    margin-right: 100px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.card ul{
+    margin-right: 100px;
+    margin: 0px 100px 5px auto;
+    padding-top: 0px;
+}
+
+.card a{
+    color: #73A7D5;
+    text-decoration: none;
+    text-align: center;
+    font-size: 14px;
+}
+
+#bottom_blue_box ul{
+    text-align: center;
+    margin-top: 50px;
+}
+
+#bottom_blue_box li{
+    display: inline;
+}
+
+#bottom_blue_box a{
+    text-decoration: none;
+    list-style: none;
+    color: #80B3DF;
+    font-size: 18px;
+    margin: 0px 20px 0px 20px;
+}
+
+#bottom_blue_box p{
+    color: #80B3DF;
+    text-align: center;
+    font-size: 12px;
+}

@@ -1,0 +1,50 @@
+/* NOTE: Parent flex container ("center-box") turns
+all children ("center-item") into flex items */
+
+/* PART 1 */
+
+.center-box{
+    width: 600px;
+    height: 250px;
+    background-color: #190080;
+    display: flex;
+    justify-content: center;  /* justify-content only moves items horizontally */
+    align-items: center  /* align-items only moves items vertically */
+}
+
+.center-item{
+    height: 85px;
+    width: 85px;
+    background-color: #FAE4B6;
+}
+
+/* PART 2 */
+
+.navbar{  /* This is the parent div tag */
+    background-color: #6495ED;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+img{
+    width: 50px;
+    /*Don't have to specify height; it will do it automatically*/
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+li{
+    margin-right: 50px;
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat'
+}

@@ -1,0 +1,124 @@
+*{
+    /* outline: 2px dotted red; */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#container{
+    width: 1000px;
+    min-height: 500px;
+    background-image: linear-gradient(#423037,#6F5964,#423037);
+}
+
+#header{
+    min-height: 50px;
+    background-color: silver;
+    align-items: center;
+}
+
+#header h1{
+    display: inline-block;
+    font-family: cursive; 
+    margin-left: 30px;
+}
+
+#header h2{
+    display: inline-block;
+    margin-left: 350px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#body{
+    padding: 20px;
+}
+
+#intro{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#intro img{
+    width: 50%;
+    vertical-align: top;
+    border: 5px solid gray;
+}
+
+#about{
+    display: inline-block;
+    width: 40%;
+    background-color: silver;
+    padding: 10px;
+}
+
+#about h3{
+    background-image: linear-gradient(darkgrey,gray,darkgrey);
+    margin: 0px;
+    padding: 10px;
+    color: white;
+}
+
+#card_body{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    width: 31%;
+    background-color: silver;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.card img{
+    width: 100%;
+}
+
+.card h2, .card h3{
+    color: white;
+    background-image: linear-gradient(darkgrey,gray,darkgrey);
+    padding: 10px;
+    margin: 0px;
+}
+
+.card p{
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+.icons{
+    padding: 10px;
+}
+
+.icons img{
+    width: 16%;
+    margin: 2px;
+}
+
+.button{
+    display: block;
+    margin: 0px auto;
+    background-color: green;
+    border-radius: 5px;
+    color: white;
+}
+
+#footer{
+    background-color: silver;
+    min-height: 80px;
+    text-align: center;
+    padding: 5px;
+}
+
+#footer img{
+    width: 2%;
+    margin: 2px;
+}
+
+#footer a{
+    font-style: italic;
+}
+
+#footer p{
+    margin-bottom: 10px;
+}

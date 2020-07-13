@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <!-- script is linking jQuery library and saying "take all the code hosted at this URL and allow me to use it on this page." -->
+    <script src="main.js"></script>
+    <!-- My main.js file link needs to be below the jQuery CDN link! -->
+    <title>jQuery Functions</title>
+</head>
+<body>
+    <div id="container">
+
+        <h1 id="main_title">Testing Out jQuery Functions</h1>
+        
+        <div id="click_func">
+            <h2>.click() and alert() Functions</h2>
+            <button id="click">Click for .click() and alert()</button>
+        </div>
+            
+        <div id="fade_func">
+            <h2>.hover(), .fadeOut() and .fadeIn() Functions</h2>
+            <p>Hover over the sample text to see it fade in and out:</p>
+            <p id="fade_text">Sample text Sample Text Sample Text Sample Text</p>
+        </div>
+
+        <div id="toggle_func">
+            <h2>.toggle() Function</h2>
+            <button id="toggle_button">Click to toggle the sample text on and off</button>
+            <p id="toggle_text">Sample text Sample Text Sample Text Sample Text</p>
+        </div>
+
+        <div id="append_func">
+            <h2>.append() Function</h2>
+            <button id="append_button">Click to append text to the line below</button>
+            <p id="append_text">Happy birthday</p>
+        </div>
+
+        <div id="text_func">
+            <h2>.text() Function</h2>
+            <p id="text_func_h3">When you click the button, the .text() function will replace this sentence.</p>
+            <button id="text_func_button">Click for .text()</button>
+        </div>
+
+        <div id="val_func">
+            <h2>.val() Function</h2>
+            <p>Favorite color: <input type="text" id='color' value='Red'></p>
+            <button id="color_button">Click to see my new favorite color</button>
+        </div> 
+
+        <div id="class_func">
+            <h2>.addClass() Function</h2>
+            <button id="class_button">Click to add a class that changes the button color</button>
+        </div>
+
+        <div id="attr_func">
+            <h2>.attr() Function</h2>
+            <p>Example link: <a id='link' href="www.google.com">Google link</a></p>
+            <p>By clicking the button below, the attribute function will target the value of the link and output it to the console.</p>
+            <button id="attr_button">Click for .attr() to log to console</button>
+        </div>
+    </div>
+</body>
+</html>
